@@ -157,8 +157,8 @@ body{
 /*home section start*/
 .bg-light {
     background-color: #00cce1!important;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin: 0 !important;
+    padding: 0;
 }
 .headdd_section{
     background: #00CCE1
@@ -169,10 +169,11 @@ body{
 
 
 
-.shop{}
+.shop{
+    position: relative;
+}
 .shop ul{
-    padding-right: 35px;
-    margin-bottom: 0 !important;	
+    margin-bottom: 0;
 }
 .shop ul li{
     list-style: none;
@@ -184,7 +185,6 @@ body{
     padding-right: 10px;
 }
 .shop ul li a i{
-    position: relative;
     font-size: 20px;
     color:#fff;
 }
@@ -194,86 +194,44 @@ body{
     background: #F69165;
     border-radius: 30px;
     padding: 0px 5px;
+    top: -5px;
+    right: -5px;
     font-size: 10px;
-    margin: 0;
-    top: 0;
-    display: block;
-    transform: translate(405%,95%);
 }
 
-
-
-
-
-
-
-
-.calender{
-	position: relative;
-
-    background: #f69165;
-    transform: skew(-20deg);
-    padding: 20px 20px;
-    text-align: center;
-    display: block;
-}
-.calender ul{
-}
-.calender ul li{}
-.calender ul li a{}
-.calender ul li a span{}
-.calender ul li a span i{
-	float: left;
-	color: #fff;
-	font-size: 20px;
-	margin-top: 0;
-}
-.calender ul li a span p{
-	float: right;
-	color: #fff;
-	margin-bottom: 0;
-	padding-left: 10px;
-}
-.calender ul li a span
-}
-.calender::before{
-	content: "";
-    background: #f69165;
-    transform: skew(-20deg);
-    padding: 20px 20px;
-    text-align: center;
-    display: block;
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: 50px;
+    font-style: normal;
+    margin-left: 0;
+    color: red;
 }
 
-/*
 .calender{position:  relative;}
-.calender ul{
-	list-style: none;
-	display: inline-block;
-}
+.calender ul{margin-bottom: 0;}
 .calender ul li{text-decoration:  none;}
 .calender ul li a{text-decoration: none;padding-left:  15px;color: #fff;}
 .calender ul li a span{
-    padding:  20px 20px;
-    background: #f69165;
+    padding:  20px 40px;
     position:  relative;
-    transform: skew(-15deg);
-    display:  inline-block;
-    top: 0;
-    left:  0;
-    height:  100%;
-    width: 100%;
-}
-.calender ul li a span p{
-	float: right;
+    display:  inline-block; 
+    position:relative;
 }
 .calender ul li a span i{
-	float: left;
-	font-size: 22px;
-    padding-right: 15px;
+    font-size: 20px;
+    position: relative;
 }
-.calender ul li a span i::after{
-}*/
+.calender ul li a span::before{
+    content: "";
+    position: absolute;
+    background: #f69165;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    transform: skew(-15deg);
+}
  /*home section end*/
 
 
@@ -339,10 +297,6 @@ body{
 }
 .btn1{
 }
-.btn2{
-    padding-left: 25px;
-    display: table-caption;
-}
 .btn1 button{
     text-transform: uppercase !important;
     color:#fff !important;
@@ -361,6 +315,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 110px;
+    background-position-y: 50px;
 }
 .welcome img{
 }
@@ -379,32 +334,93 @@ body{
     padding-top:  10px;
     padding-bottom:  10px;
 }
-.teeth i{/*
-	font-family: Flaticon;
-    font-size: 50px;
-    font-style: normal;
-    margin-left: 0px;
-    color: #f36020;*/
-}
+.teeth i{}
 .teeth h2{
     font-size: 22px;
 }
 .teeth p{
     font-size: 16px;
 }
-.flaticon-medical-1:before {
-    content: "\f10c";
-}
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    font-family: Flaticon;
-    font-size: 50px;
-    font-style: normal;
-    margin-left: 0px;
-    color: red;
-}
+
 /*Agency section  end*/
 
-/*our team section start*/
+/*doctor section start*/
+
+.doctor_section{
+    padding: 100px 0px;
+    background:  #eee;
+}
+.doctor_heading{
+    text-align: center;
+}
+.doctor_heading img{}
+.doctor_heading h1{
+    font-weight: 600;
+    color: #000;
+    font-size: 36px;
+}
+.doctor_heading p{
+    font-size: 16px;
+    color: #999;
+}
+.doctor{
+    margin-top: 50px;
+    text-align: center;
+    background: #fff;    
+}
+.doctor h3{
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+}
+.doctor p{
+    padding-bottom: 0 !important;
+    font-size: 16px;
+    color: #999;
+    display: inline-block;
+    position: relative;
+}
+.doctor .doctor-img{
+}
+.doctor .doctor-img img{
+    position: relative;
+}
+.doctor .doctor-img img::before{
+    position: relative;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+.doctor .doctor-img img{
+
+}
+.doctor .doctor-img ul{
+}
+.doctor .doctor-img ul li{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    list-style: none;
+}
+.doctor .doctor-img ul li a{
+    padding: 0px 5px;
+    color: red;    
+}
+.doctor .doctor-img ul li a i{
+    height: 45px;
+    width: 45px;
+    border: 1px solid red;
+    line-height: 45px;
+}
+.doctor .doctor-img ul li a i:hover{
+    background: #f69165;
+    color:#fff;
+    border: 1px solid #fff;
+}
 
 
-/*our team section end*/
+/*doctor section end*/
